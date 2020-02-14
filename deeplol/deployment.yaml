@@ -17,3 +17,6 @@ spec:
           image: ckcks12/deep-whale-web
           ports:
             - containerPort: 80
+          env:
+            - name: GA_HOST
+              value: ga
