@@ -19,4 +19,4 @@ spec:
             - containerPort: 80
           env:
             - name: GA_HOST
-              value: ga
+              value: http://ga
