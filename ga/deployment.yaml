@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ga
-          image: ckcks12/deep-whale-web
+          image: ckcks12/deep-whale-ga
           ports:
             - containerPort: 80
           livenessProbe:
