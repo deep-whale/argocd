@@ -21,7 +21,7 @@ spec:
             httpGet:
               port: 80
               path: /health
-            initialDelaySeconds: 5 # it needs to load database
+            initialDelaySeconds: 5
           readinessProbe:
             httpGet:
               port: 80
