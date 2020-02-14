@@ -15,17 +15,9 @@ spec:
       containers:
         - name: ga
           image: ckcks12/deep-whale-ga
-          env:
-            - name: DB_HOST
-              value: whale.eunchan.com
-            - name: DB_PORT
-              value: 9354
-            - name: DB_USER
-              value: uBVj64aCvFEMtb
-            - name: DB_PASSWORD
-              value: Sn6KNYWrQDCn68
-            - name: DB_NAME
-              value: postgres
+          envFrom:
+            - configMapRef:
+                name: ga
           ports:
             - containerPort: 80
           livenessProbe:
